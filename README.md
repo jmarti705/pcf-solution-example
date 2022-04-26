@@ -48,18 +48,25 @@ Version|Date|Comments
 ## Minimal Path to Awesome
 
 - Clone this repository
+- modify the config.ts file for SampleComp
+  - naviagte to ..\solution\SampleComp\SampleComp\config.ts 
+    - add your azure function settings: 
+    - **clientId: "Enter_the_Application_Id_Here",**
+      **authority: "Enter_the_Cloud_Instance_Id_Here/Enter_the_Tenant_Info_Here",**
+      **redirectUri: "Enter_the_Redirect_Uri_Here",**
+
 - in the terminal/command-line 
-- cd to ..\solution\MyReactComponent 
-- run:
-  - **npm install**
-- cd to ..\solution\SampleComp 
-- run:
-  - **npm install**
+  - cd to ..\solution\MyReactComponent 
+    - run: 
+    - **npm install**
+  - cd to ..\solution\SampleComp 
+    - run: 
+    - **npm install**
 
 - in the Developer Command Prompt:
-- cd to ..\solution
-- run:
-  - **msbuild /t:build /restore**
+  - cd to ..\solution
+  - run:
+    - **msbuild /t:build /restore**
 
 
 - go to your Platform Enviornment to upload package solution: (https://docs.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions)
