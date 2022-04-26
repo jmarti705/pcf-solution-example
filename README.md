@@ -57,30 +57,31 @@ Version|Date|Comments
 
 - in the terminal/command-line 
   - cd to ..\solution\MyReactComponent 
-  - run: 
-  - **npm install**
-  - cd to ..\solution\SampleComp 
-  - run: 
-  - **npm install**
+    - run: 
+    - **npm install**
+    - cd to ..\solution\SampleComp 
+    - run: 
+    - **npm install**
 
 - in the Developer Command Prompt:
   - cd to ..\solution
-  - run:
-  - **msbuild /t:build /restore**
+    - run:
+    - **msbuild /t:build /restore**
 
 
 - go to your Platform Enviornment to upload package solution: (https://docs.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions)
 - navigate to 'Solutions' and select 'Import'
   - using file explorer:
   - navigate to ..\solution\bin\Debug
-  - locate zip file:
-  - **solution.zip**
+    - locate zip file:
+    - **solution.zip**
 
 - go to your Platform Enviornment to add Component to Canvas app: (https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps)
 - navigate to 'Code Component'
-  - select 'Get more components', under code select:
-  - **SampleComp**
-  - **MyReactComponent**
+  - select 'Get more components'
+    - under code select:
+    - **SampleComp**
+    - **MyReactComponent**
 
 ## Features
 
