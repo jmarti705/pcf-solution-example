@@ -48,12 +48,32 @@ Version|Date|Comments
 ## Minimal Path to Awesome
 
 - Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
+- in the terminal/command-line 
+- cd to ..\solution\MyReactComponent 
+- run:
   - **npm install**
-  - **gulp serve**
+- cd to ..\solution\SampleComp 
+- run:
+  - **npm install**
 
-> Include any additional steps as needed.
+- in the Developer Command Prompt:
+- cd to ..\solution
+- run:
+  - **msbuild /t:build /restore**
+
+
+- go to your Platform Enviornment to upload package solution: (https://docs.microsoft.com/en-us/power-apps/maker/data-platform/import-update-export-solutions)
+- navigate to 'Solutions' and select 'Import'
+  - using file explorer:
+  - navigate to ..\solution\bin\Debug
+  - locate zip file:
+    - **solution.zip**
+
+- go to your Platform Enviornment to add Component to Canvas app: (https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps)
+- navigate to 'Code Component'
+- select 'Get more components', under code select:
+  - **SampleComp**
+  - **MyReactComponent**
 
 ## Features
 
