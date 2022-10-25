@@ -40,6 +40,7 @@ After the class declaration add properties for **context** and **container**
 
 ```typescript
 export class SampleField implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+    // Add component properties
     context : ComponentFramework.Context\<IInputs\>;
     container : HTMLDivElement;
     /**
@@ -50,16 +51,17 @@ export class SampleField implements ComponentFramework.StandardControl<IInputs, 
 
 After the **init** function update the component properties and add **'Hello World'** to **container.innerText** value 
 
-`public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
+```typescript
+public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
     {
         // Add control initialization code
         // Update component properties
         this.context = context;
         this.container = container;
-
+        // Add Hello World text content
         this.container.innerText = 'Hello World!';
     }`
-
+```
 ### 3. Build Component 
 
 Run **npm run build** from the component root

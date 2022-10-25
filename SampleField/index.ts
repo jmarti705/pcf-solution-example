@@ -1,7 +1,7 @@
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class SampleField implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-
+   // Add component properties
     context : ComponentFramework.Context<IInputs>;
     container : HTMLDivElement;
     /**
@@ -26,7 +26,7 @@ export class SampleField implements ComponentFramework.StandardControl<IInputs, 
         // Update component properties
         this.context = context;
         this.container = container;
-
+        // Add Hello World text content
         this.container.innerText = 'Hello World!';
     }
 
