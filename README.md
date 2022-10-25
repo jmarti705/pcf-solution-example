@@ -35,7 +35,7 @@ Run npm install
 ### 2. Add "Hello World" Content to Component (..\pcf-solution-example\SampleField\index.ts)
 Navigate to the component index.ts file and make the following changes to render "Hello World" text in the component
 
-After the class declaration add properties for **context** and **container**
+After the class declaration add properties for **context** and **container** 
 
 `export class SampleField implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
@@ -45,7 +45,8 @@ After the class declaration add properties for **context** and **container**
      * Empty constructor.
      */`
 
-After the **init** function update the component properties and add **'Hello World'** to **container.innerText** value
+After the **init** function update the component properties and add **'Hello World'** to **container.innerText** value 
+
 `   public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
     {
         // Add control initialization code
