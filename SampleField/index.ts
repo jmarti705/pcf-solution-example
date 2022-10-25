@@ -2,6 +2,8 @@ import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class SampleField implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
+    context : ComponentFramework.Context<IInputs>;
+    container : HTMLDivElement;
     /**
      * Empty constructor.
      */
@@ -21,6 +23,11 @@ export class SampleField implements ComponentFramework.StandardControl<IInputs, 
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
     {
         // Add control initialization code
+        // Update component properties
+        this.context = context;
+        this.container = container;
+
+        this.container.innerText = 'Hello World!';
     }
 
 
