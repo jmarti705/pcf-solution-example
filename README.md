@@ -37,19 +37,18 @@ Navigate to the component index.ts file and make the following changes to render
 
 After the class declaration add properties for **context** and **container** 
 
-`
+``
 export class SampleField implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-
     context : ComponentFramework.Context<IInputs>;
     container : HTMLDivElement;
     /**
-     * Empty constructor.
-     */`
+    * Empty constructor.
+    *\/
+``
 
 After the **init** function update the component properties and add **'Hello World'** to **container.innerText** value 
 
-`
-public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
+`public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
     {
         // Add control initialization code
         // Update component properties
