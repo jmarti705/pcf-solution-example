@@ -11,6 +11,7 @@ In this example I will be using VS code with the terminal on Windows.
 ## Solution Components
 
 *   [TypeScript Component for PCF](https://github.com/jmarti705/pcf-solution-example/wiki/Power-apps-Component-Framework-(PCF)-development)
+*   [React Component for PCF](https://github.com/jmarti705/pcf-solution-example/wiki/PCF-React-component)
 
 ## MS Docs
 
